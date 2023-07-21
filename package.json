@@ -1,0 +1,33 @@
+{
+  "name": "wp-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "parcel watch",
+    "build": "parcel build",
+    "lint": "eslint ./assets/js/**/* --ext .js",
+    "format": "prettier --write ./assets/**/*",
+    "prepare": "husky install"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.8.3",
+    "eslint": "^8.39.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.3",
+    "parcel": "^2.8.3",
+    "prettier": "^2.8.8"
+  },
+  "targets": {
+    "js": {
+      "source": "assets/js/main.js"
+    },
+    "styles": {
+      "source": "assets/scss/main.scss"
+    }
+  }
+}
