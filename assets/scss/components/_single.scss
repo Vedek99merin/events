@@ -1,0 +1,9 @@
+.single-page-event {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+  &-image {
+    max-width: 500px;
+  }
+}

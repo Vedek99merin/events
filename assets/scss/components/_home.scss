@@ -1,0 +1,24 @@
+.home-page {
+  position: relative;
+  height: 100vh;
+
+  &-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &-background {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+  }
+
+  &-title {
+    margin: 0;
+    color: #fff;
+    background: #000000a3;
+    padding: 20px;
+  }
+}

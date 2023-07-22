@@ -12,6 +12,7 @@ if ( ! function_exists( 'starter_scripts' ) ) {
 		//Scripts
 		//Add Localize
 		wp_enqueue_script( 'starter-script-main', get_template_directory_uri() . '/dist/js/main.js' , array(), false, true );
+		wp_localize_script('starter-script-main', 'ajax_object', array('ajax_url' => admin_url('admin-ajax.php')));
 
 		//Add global var
 		/* if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
